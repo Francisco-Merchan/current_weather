@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #130c1b;
+}
+
+.dataContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.principalData {
+  width: 30%;
+  height: 100vh;
+  background-color: #1e2339;
+}
+
+.cityName {
+  padding-top: 30px;
+}
+
+.temperature {
+  font-size: 90px;
+  padding: 150px 0px;
+}
+
+.weather {
+  font-size: 23px;
+  color: gray;
+}
+
+.secondaryData {
+  width: 70%;
+}
+
+.currentData {
+  padding: 15px 50px;
+  color: gray;
+  align-items: center;
+  margin-top: 15%;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.day1,
+.day2,
+.day3,
+.day4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e2339;
+  padding: 50px 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 150px;
+}
+
+@media (max-width: 900px) {
+  .dataContainer {
+    display: block;
+  }
+
+  .principalData {
+    width: 100%;
+    height: 30%;
+  }
+
+  .temperature {
+    font-size: 90px;
+    padding: 25px 0px;
+  }
+
+  .weather {
+    font-size: 23px;
+    color: gray;
+    padding-bottom: 30px;
+  }
+
+  .secondaryData {
+    width: 100%;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .day1,
+  .day2,
+  .day3,
+  .day4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e2339;
+    padding: 50px 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    width: 150px;
+  }
+}
